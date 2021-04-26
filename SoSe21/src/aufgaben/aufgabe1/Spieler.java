@@ -8,7 +8,7 @@ public class Spieler
 {
 	//-----------------Objektvariablen-------------------
     private String name;
-    private int aktStand; //Speicherort für die erreichten Punkte des Spielers
+    private int aktStand; 
     
     //----------------Konstruktor-------------------------
     public Spieler(String name) 
@@ -34,14 +34,14 @@ public class Spieler
                 System.out.printf("Versuch zu Ende %n Aktueller Spielstand von %s : %d Punkte %n Der naechste Spieler ist dran%n", this.name, this.aktStand);
                 ende = true; //Fall beendet
             }
-            else if(aktStand+punkteInDerReihe+wurf >= Spiel.siegPunkte) //größer als Siegpunkte
+            else if(aktStand+punkteInDerReihe+wurf >= Spiel.siegPunkte)
             {
                 System.out.printf("%s hat insgesamt %d Punkte und somit gewonnen!!", this.name, (aktStand+punkteInDerReihe+wurf));
-                return true; // gewonnen?
+                return true; 
             }
             else
             {
-                punkteInDerReihe += wurf; //Will man weiter würfeln?
+                punkteInDerReihe += wurf; 
                 System.out.printf(" In diesem Versuch bisher %d Punkte -- insgesamt %d Punkte %n", punkteInDerReihe, (aktStand+punkteInDerReihe));
                 int dialogResult = JOptionPane.showConfirmDialog(null, this.name + ", wollen Sie weiter würfeln?", "weiter?,", JOptionPane.YES_NO_OPTION);
                 ende=(dialogResult == JOptionPane.NO_OPTION); 
@@ -51,6 +51,6 @@ public class Spieler
                 }
             }
         }
-        return false; //verloren??
+        return false; 
 
-}
+}}

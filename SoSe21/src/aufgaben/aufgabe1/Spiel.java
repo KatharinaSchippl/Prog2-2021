@@ -8,11 +8,11 @@ public class Spiel
      * THAO TRANG LE (anny)
      * bearbeitet mit KATHARINA SCHIPPL
      */
-    public static int siegPunkte; //static, weil man das nicht ändert
-    private static Spieler [] spieler; //auch ohne static möglich
+    public static int siegPunkte; 
+    private static Spieler [] spieler; 
     
     
-    public Spiel () //ohne public?
+    public Spiel () 
     {
         anzSpieler();
         siegPunkte();
@@ -22,14 +22,14 @@ public class Spiel
     public void anzSpieler()
     {
         int anzSpieler = 0;
-        boolean inputOk = false; //wir gehen davon aus, dass die eingabe nicht ok ist
+        boolean inputOk = false; 
         while(!inputOk)
         {
             try 
             {
                 String input = JOptionPane.showInputDialog("Anzahl Spieler:");
                 inputOk = true;
-                anzSpieler=Integer.parseInt(input); //falls das nicht klappt, dann exceptionbehandlung
+                anzSpieler=Integer.parseInt(input); 
             }
             catch (NumberFormatException e)
             {
@@ -43,14 +43,14 @@ public class Spiel
     
     public void siegPunkte()
     {
-        boolean inputOk = false; //wir gehen davon aus, dass die eingabe nicht ok ist
+        boolean inputOk = false; 
         while(!inputOk)
         {
             try 
             {
                 String input = JOptionPane.showInputDialog("Siegpunkte:");
                 inputOk = true;
-                siegPunkte=Integer.parseInt(input); //falls das nicht klappt, dann exceptionbehandlung
+                siegPunkte=Integer.parseInt(input); 
             }
             catch (NumberFormatException e)
             {
@@ -77,19 +77,10 @@ public class Spiel
         while (!gewonnen)
         {
             gewonnen = spieler[index].wuerfeln(); 
-            index=(index<spieler.length-1) ? index+1 : 0; //wenn ja index +1 und wenn nein 0
-            /*if (index<spieler.length-1) 
-             * {
-             * index = index+1;
-             * }
-             * else
-             * {
-             * index = 0;
-             * }
-             */
+            index=(index<spieler.length-1) ? index+1 : 0; 
         }
 
-
+    }
 	public static void main(String[] args) 
 	{
 		Spiel spiel = new Spiel ();

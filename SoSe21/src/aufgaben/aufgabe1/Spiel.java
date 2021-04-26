@@ -5,8 +5,9 @@ import javax.swing.JOptionPane;
 public class Spiel 
 {
 	 /*
-     * THAO TRANG LE (anny)
-     * bearbeitet mit KATHARINA SCHIPPL
+	  * KATHARINA SCHIPPL
+     * 
+     * bearbeitet mit @ THAO TRANG LE (anny)
      */
     public static int siegPunkte; 
     private static Spieler [] spieler; 

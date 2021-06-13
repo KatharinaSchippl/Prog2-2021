@@ -1,5 +1,8 @@
 package aufgaben.aufgabe7;
-
+/*
+ * Katharina Schippl
+ * bearbeitet mit @Thao Trang Le (Anny) 
+ */
 public interface Listener 
 {
 	public void update();

@@ -1,4 +1,8 @@
 package aufgaben.aufgabe7;
+/*
+ * Katharina Schippl
+ * bearbeitet mit @Thao Trang Le (Anny) 
+ */
 
 import java.util.*;
 

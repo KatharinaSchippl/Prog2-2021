@@ -12,7 +12,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
+/*
+ * Katharina Schippl
+ * bearbeitet mit @Thao Trang Le
+ */
 public class Taschenrechner extends JFrame implements ActionListener {
 
 		JTextField tf;
